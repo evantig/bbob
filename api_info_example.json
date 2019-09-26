@@ -1,0 +1,6 @@
+{
+    "ckey": "Consumer Key",
+    "csec": "Consumer Secret",
+    "atkey": "Access Token Key",
+    "atsec": "Access Token Secret"
+}
