@@ -41,5 +41,10 @@ auth.set_access_token(tw_apiinfo['atkey'], tw_apiinfo['atsec'])
 
 api = tweepy.API(auth, wait_on_rate_limit = True, wait_on_rate_limit_notify = True, compression = True)
 
-api.update_status('THIS IS A TEST MESSAGE: ' + composeMessage.ph1(w1dic, w2dic))
-# print('THIS IS A TEST MESSAGE: ' + composeMessage.ph1(w1dic, w2dic))
+message = 'THIS IS A TEST MESSAGE: ' + composeMessage.ph1(w1dic, w2dic)
+
+try:
+    api.update_status(message)
+    print('Sent message "' + message + '"')
+except:
+    print('Failed to update status')
