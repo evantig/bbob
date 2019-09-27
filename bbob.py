@@ -24,8 +24,11 @@ class composeMessage:
 
 composeMessage = composeMessage()
 
+user = True
+
 tw_apiinfo = json.load(open('api_info.json'))
 dictionary = json.load(open('dictionary.json'))
+users = json.load(open('accounts.json'))['account_list']
 w1dic = []
 w2dic = []
 for item in dictionary['words_l1']:
@@ -41,7 +44,10 @@ auth.set_access_token(tw_apiinfo['atkey'], tw_apiinfo['atsec'])
 
 api = tweepy.API(auth, wait_on_rate_limit = True, wait_on_rate_limit_notify = True, compression = True)
 
-message = 'THIS IS A TEST MESSAGE: ' + composeMessage.ph1(w1dic, w2dic)
+if user:
+    message = 'THIS IS A TEST MESSAGE: @' + users[randint(0, len(users) - 1)] + ' ' + composeMessage.ph1(w1dic, w2dic)
+else:
+    message = 'THIS IS A TEST MESSAGE: ' + composeMessage.ph1(w1dic, w2dic)
 
 try:
     api.update_status(message)

@@ -1,5 +1,5 @@
 {
-    "words_l1": [["homophobic", "homophobe", "a"], ["racist", "racist", "a"], ["idiotic", "idiot", "an"], ["trump-supporting", "trump supporter", "a"], ["gay", "gay", "a"], ["arrogant", "arrogant", "an"], ["big-headed", "bighead", "a"], ["bigoted", "bigot", "a"], ["critical", "critic", "a"]],
-    "words_l1_adj": [["aggressive", "an"], ["belligerent", "a"], ["blunt", "a"], ["callous", "a"], ["cynical", "a"], ["dishonest", "a"], ["envious", "a"], ["greedy", "a"], ["hostile", "a"], ["intolerant", "an"], ["irresponsible", "an"], ["jealous", "a"], ["pessimistic", "a"], ["prejudiced", "a"], ["prideful", "a"], ["resentful", "a"], ["rude", "a"], ["sad", "a"], ["selfish", "a"], ["suspicious", "a"], ["thoughtless", "a"], ["untrusting", "a"]],
+    "words_l1": [["homophobic", "homophobe", "a"], ["racist", "racist", "a"], ["idiotic", "idiot", "an"], ["trump-supporting", "trump supporter", "a"], ["gay", "gay", "a"], ["big-headed", "bighead", "a"], ["bigoted", "bigot", "a"], ["critical", "critic", "a"]],
+    "words_l1_adj": [["aggressive", "an"], ["belligerent", "a"], ["blunt", "a"], ["callous", "a"], ["cynical", "a"], ["dishonest", "a"], ["envious", "a"], ["greedy", "a"], ["hostile", "a"], ["intolerant", "an"], ["irresponsible", "an"], ["jealous", "a"], ["pessimistic", "a"], ["prejudiced", "a"], ["prideful", "a"], ["resentful", "a"], ["rude", "a"], ["sad", "a"], ["selfish", "a"], ["suspicious", "a"], ["thoughtless", "a"], ["untrusting", "a"], ["arrogant", "an"]],
     "words_l1_noun":[]
 }
