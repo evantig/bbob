@@ -61,4 +61,5 @@ while True:
         print('Sent message "' + message + '"')
     except:
         print('Failed to update status')
+        break
     sleeptimer(24 * 60 * 60) # 24hrs * 60mins * 60secs
