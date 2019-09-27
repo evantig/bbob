@@ -29,6 +29,7 @@ def sleeptimer(secs):
     while i < secs:
         sleep(1)
         print(str(secs - i) + ' seconds remaining...')
+        i += 1
 
 user = True
 
@@ -53,13 +54,13 @@ while True:
     for item in dictionary['words_l1_noun']:
         w2dic.append([item])
     if user:
-        message = 'THIS IS A TEST MESSAGE: @' + users[randint(0, len(users) - 1)] + ' ' + composeMessage.ph1(w1dic, w2dic)
+        message = '@' + users[randint(0, len(users) - 1)] + ' ' + composeMessage.ph1(w1dic, w2dic)
     else:
-        message = 'THIS IS A TEST MESSAGE: ' + composeMessage.ph1(w1dic, w2dic)
+        message = composeMessage.ph1(w1dic, w2dic)
     try:
         api.update_status(message)
         print('Sent message "' + message + '"')
     except:
         print('Failed to update status')
         break
-    sleeptimer(24 * 60 * 60) # 24hrs * 60mins * 60secs
+    sleeptimer(12 * 60 * 60) # 24hrs * 60mins * 60secs
