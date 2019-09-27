@@ -63,4 +63,4 @@ while True:
     except:
         print('Failed to update status')
         break
-    sleeptimer(12 * 60 * 60) # 24hrs * 60mins * 60secs
+    sleeptimer(12 * 60 * 60) # 12hrs * 60mins * 60secs
